@@ -1,5 +1,5 @@
 # DeviceID_Plus
-Code with various DeviceID+ Use-cases
+Code for various Shape DeviceID+ Use-cases
 
 RATE_LIMIT
 - Simple functionality similar to ASM/Adv.WAF Session tracking based on violations but instead using Shape Device ID+ for Device correlation
