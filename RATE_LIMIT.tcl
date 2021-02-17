@@ -8,9 +8,7 @@ when ASM_REQUEST_DONE {
         set tableout [table keys -subtable $deviceidb]
         if { [table keys -subtable $deviceidb -count] >= 5 } { 
                 log local0.debug "DeviceID rate limit has been exceeded by device $deviceidb"
-                log local0.debug "Table output is: $tableout"
                 drop
-                return
             }
         if { [ASM::status] equals "alarmed" or [ASM::status] equals "blocked" } {
                 set did [HTTP::cookie _imp_apg_r_]
