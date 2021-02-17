@@ -8,8 +8,7 @@ RATE_LIMIT
 - Triggers >= 5 violations (they must be flagged as violations by ASM/Advanced WAF)
 - Silent drop is used after 5 violations... No support ID will be provided to the client/attacker at this point
 - Default block timer of 30 seconds for any offending DeviceID
-- ***There is no inherent integrity checking of the cookies used for DeviceID+ identifiers at this time. Thus, this is simply a proof of concept and should not be relied upon for security enforcement as it is currently susceptible to replay, hijacking and other attacks.
-
+- ***There is currently no integrity checking of the cookies used for DeviceID+ identifiers at this time. Thus, this is simply a proof of concept and should not be relied upon for security enforcement as it is currently susceptible to replay, hijacking and other such attacks.***
 
 WAF_BLOCK_LOGGING
 - Simple iRule to better correlate ASM/Advanced WAF violations with the Shape DeviceID+ value
