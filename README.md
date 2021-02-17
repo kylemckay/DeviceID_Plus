@@ -1,4 +1,4 @@
-# DeviceID_Plus
+# DeviceID Plus WAF iRules
 Code for various Shape DeviceID+ Use-cases
 
 ## RATE_LIMIT
