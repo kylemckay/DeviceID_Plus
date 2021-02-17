@@ -1,7 +1,7 @@
 # DeviceID_Plus
 Code for various Shape DeviceID+ Use-cases
 
-RATE_LIMIT
+## RATE_LIMIT
 - Simple functionality similar to F5 ASM/Advanced WAF Session tracking but instead of using the Client IP or the local DeviceID we are using Shape Device ID+ for event correlation
 - Currently only uses the Device-based identifier and not the residue-identifier for tracking
 - Maintains a subtable for each DeviceID
@@ -10,10 +10,11 @@ RATE_LIMIT
 - Default block timer of 30 seconds for any offending DeviceID
 - ***There is currently no integrity checking of the cookies used for DeviceID+ identifiers at this time. Thus, this is simply a proof of concept and should not be relied upon for security enforcement as it is currently susceptible to replay, hijacking and other such attacks.***
 
-WAF_BLOCK_LOGGING
+
+## WAF_BLOCK_LOGGING
 - Simple iRule to better correlate ASM/Advanced WAF violations with the Shape DeviceID+ value
 - By using this iRule, a Security Operations team can better correlate attacker activity across their various web properties by leveraging the Shape Device ID value of the attacker
 - Currenty logs to local ONLY, but one can easily modify this code to instead send these logs to a high speed logging destination such as the SIEM of your choice
 
 
-Code is provided as-is. No warranty is implied.
+*Code is provided as-is. No warranty is implied.*
